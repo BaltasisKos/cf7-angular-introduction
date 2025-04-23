@@ -29,9 +29,19 @@
         <td class="ps-2">{{person.email}}</td>
       </tr>
   </table>
+
+  <!-- <div class="d-flex gap-5 text-nowrap">
+  <app-person-table></app-person-table>
+</div> -->
+
+
+  <!-- For input we use [] -->
+  <div class="d-flex gap-5 text-nowrap">
+    <app-person-table [personInput]="person0"></app-person-table>
+    <app-person-table></app-person-table>
+    <app-person-table [personInput]="person1"></app-person-table>
+  </div>
 </div>
 
-<div class="d-flex gap-5 text-nowrap">
-  <app-person-table></app-person-table>
-</div>
+
  <!-- ng serve to run in localhost:4200 -->
