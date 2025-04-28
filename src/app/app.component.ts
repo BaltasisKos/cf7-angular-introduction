@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet, RouterLink } from '@angular/router';
-import { PersonTableComponent } from './components/person-table/person-table.component';
+// import { PersonTableComponent } from './components/person-table/person-table.component';
+// import { Person } from './shared/interfaces/person';
+// import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
+import { ListGroupMenuComponent } from './components/list-group-menu/list-group-menu.component';
 import { Person } from './shared/interfaces/person';
-import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, ListGroupMenuComponent],
   //imports: [PersonTableComponent, EventBindExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -17,29 +19,29 @@ export class AppComponent {
   
 
   // Step 1: One way binding of data
-  person = {
-    givenName: 'Kostas',
-    surName: 'Kostakis',
-    age: 35,
-    email: 'kostakis@aueb.gr'
-  }
+  // person = {
+  //   givenName: 'Kostas',
+  //   surName: 'Kostakis',
+  //   age: 35,
+  //   email: 'kostakis@aueb.gr'
+  // }
 
-  // Step 3: Component input
-  person0: Person ={
-    givenName: "Christodoulos",
-    surName: "Fragkoudakis",
-    age: 55,
-    email: "chfraf@aueb.gr",
-    address: "Athens, Greece"
-  }
+  // // Step 3: Component input
+  // person0: Person ={
+  //   givenName: "Christodoulos",
+  //   surName: "Fragkoudakis",
+  //   age: 55,
+  //   email: "chfraf@aueb.gr",
+  //   address: "Athens, Greece"
+  // }
 
-  person1: Person = {
-    givenName: "John",
-    surName: "Doe",
-    age: 32,
-    email: "john@example.com",
-    address: 'New York, USA'
-  }
+  // person1: Person = {
+  //   givenName: "John",
+  //   surName: "Doe",
+  //   age: 32,
+  //   email: "john@example.com",
+  //   address: 'New York, USA'
+  // }
 
   users: Person[] = [
     {
