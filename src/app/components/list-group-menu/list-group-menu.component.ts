@@ -11,6 +11,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class ListGroupMenuComponent {
   menu = [
     {text: 'Component Input Example', linkName: 'component-input-example'},
+    {text: 'Component Output Example', linkName: 'component-output-example'},
     {text: '@for Dierective Example', linkName: 'for-directive-example'},
     {text: 'Event-Bind-Example', linkName: 'event-bind-example'},
     {text: 'Simple Datatable Example', linkName: 'simple-datatable-example'}

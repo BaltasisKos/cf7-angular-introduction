@@ -8,7 +8,7 @@ import { Person } from './shared/interfaces/person';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, ListGroupMenuComponent],
+  imports: [RouterOutlet, ListGroupMenuComponent],
   //imports: [PersonTableComponent, EventBindExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
