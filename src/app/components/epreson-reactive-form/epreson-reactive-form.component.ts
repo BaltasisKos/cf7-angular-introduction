@@ -37,6 +37,7 @@ export class EpresonReactiveFormComponent {
     console.log(this.form);
     console.log("givenName>>>", this.form.controls['givenName'].value);
     this.form.controls['surName'].setValue('Papakis');
+    console.log(this.form.value);
   }
 
   onSetValue() {
