@@ -1,37 +1,34 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 // import { PersonTableComponent } from './components/person-table/person-table.component';
 // import { Person } from './shared/interfaces/person';
 // import { EventBindExampleComponent } from './components/event-bind-example/event-bind-example.component';
 import { ListGroupMenuComponent } from './components/list-group-menu/list-group-menu.component';
-import { Person } from './shared/interfaces/person';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, ListGroupMenuComponent],
-  //imports: [PersonTableComponent, EventBindExampleComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-  name = 'Kostas';
-  
+  // name = 'Markos';
 
-  // Step 1: One way binding of data
+  // // Step 1: One way binding of data
   // person = {
-  //   givenName: 'Kostas',
-  //   surName: 'Kostakis',
-  //   age: 35,
-  //   email: 'kostakis@aueb.gr'
+  //   givenName: 'Markos',
+  //   surName: 'Karampatsis',
+  //   age:52,
+  //   email:'marka@aueb.gr'
   // }
 
-  // // Step 3: Component input
-  // person0: Person ={
+  // Step 3: Component Input
+  // person0: Person = {
   //   givenName: "Christodoulos",
   //   surName: "Fragkoudakis",
-  //   age: 55,
-  //   email: "chfraf@aueb.gr",
+  //   age:55,
+  //   email: "chfrag@aueb.gr",
   //   address: "Athens, Greece"
   // }
 
@@ -40,130 +37,6 @@ export class AppComponent {
   //   surName: "Doe",
   //   age: 32,
   //   email: "john@example.com",
-  //   address: 'New York, USA'
+  //   address: "New York, USA"
   // }
-
-  users: Person[] = [
-    {
-      "givenName": "Cally",
-      "surName": "Ogilvie",
-      "email": "cogilvie0@salon.com",
-      "age": 1,
-      "address": "Suite 85"
-    }, {
-      "givenName": "Veda",
-      "surName": "Hancox",
-      "email": "vhancox1@instagram.com",
-      "age": 2,
-      "address": "PO Box 62053"
-    }, {
-      "givenName": "Nate",
-      "surName": "Renner",
-      "email": "nrenner2@dyndns.org",
-      "age": 3,
-      "address": "PO Box 29788"
-    }, {
-      "givenName": "Robinette",
-      "surName": "Lye",
-      "email": "rlye3@goodreads.com",
-      "age": 4,
-      "address": "10th Floor"
-    }, {
-      "givenName": "Teddi",
-      "surName": "Lethlay",
-      "email": "tlethlay4@bizjournals.com",
-      "age": 5,
-      "address": "PO Box 54270"
-    }, {
-      "givenName": "Basile",
-      "surName": "Bisp",
-      "email": "bbisp5@timesonline.co.uk",
-      "age": 6,
-      "address": "PO Box 73652"
-    }, {
-      "givenName": "Cyrill",
-      "surName": "Tomasoni",
-      "email": "ctomasoni6@washingtonpost.com",
-      "age": 7,
-      "address": "Room 1930"
-    }, {
-      "givenName": "Imelda",
-      "surName": "Yeld",
-      "email": "iyeld7@census.gov",
-      "age": 8,
-      "address": "6th Floor"
-    }, {
-      "givenName": "Enriqueta",
-      "surName": "Duffil",
-      "email": "eduffil8@pen.io",
-      "age": 9,
-      "address": "20th Floor"
-    }, {
-      "givenName": "Kevin",
-      "surName": "Kempton",
-      "email": "kkempton9@opensource.org",
-      "age": 10,
-      "address": "Suite 71"
-    }, {
-      "givenName": "Conrade",
-      "surName": "Holdey",
-      "email": "choldeya@ucoz.com",
-      "age": 11,
-      "address": "PO Box 49460"
-    }, {
-      "givenName": "Lisha",
-      "surName": "Brownsword",
-      "email": "lbrownswordb@dagondesign.com",
-      "age": 12,
-      "address": "Suite 34"
-    }, {
-      "givenName": "Darbee",
-      "surName": "Larby",
-      "email": "dlarbyc@cbc.ca",
-      "age": 13,
-      "address": "Apt 203"
-    }, {
-      "givenName": "Adria",
-      "surName": "Beeson",
-      "email": "abeesond@mtv.com",
-      "age": 14,
-      "address": "PO Box 80362"
-    }, {
-      "givenName": "Sandy",
-      "surName": "Handrik",
-      "email": "shandrike@163.com",
-      "age": 15,
-      "address": "Apt 1574"
-    }, {
-      "givenName": "Gwynne",
-      "surName": "Grimsdith",
-      "email": "ggrimsdithf@yellowbook.com",
-      "age": 16,
-      "address": "5th Floor"
-    }, {
-      "givenName": "Nollie",
-      "surName": "Gallally",
-      "email": "ngallallyg@merriam-webster.com",
-      "age": 17,
-      "address": "15th Floor"
-    }, {
-      "givenName": "Adi",
-      "surName": "Barby",
-      "email": "abarbyh@edublogs.org",
-      "age": 18,
-      "address": "PO Box 25085"
-    }, {
-      "givenName": "Peyter",
-      "surName": "Manger",
-      "email": "pmangeri@tripadvisor.com",
-      "age": 19,
-      "address": "PO Box 58933"
-    }, {
-      "givenName": "Care",
-      "surName": "Muggleton",
-      "email": "cmuggletonj@dedecms.com",
-      "age": 20,
-      "address": "17th Floor"
-    }]
-  
 }
